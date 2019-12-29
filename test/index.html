@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <style>
+      .container {
+        margin: 0 100px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .main {
+        flex-grow: 0.75;
+      }
+      .side {
+        border: 1px solid black;
+        flex-grow: 0.25;
+      }
+      .side {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90vh;
+      }
+      .side > span + span {
+        text-align: right;
+      }
+      .test {
+        background-color: #369;
+        color: white;
+        font-size: 2em;
+        font-weight: 700;
+        padding: 70vh 100px;
+      }
+      .test video {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <h1>Hello,</h1>
+        <div class="test">
+          World.
+        </div>
+      </div>
+      <div class="side">
+        <span>Sidebar Top</span>
+        <span>Sidebar Bottom</span>
+      </div>
+    </div>
+  </body>
+</html>

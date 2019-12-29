@@ -33,6 +33,21 @@ class MrPuppetShot {
   }
 
   /**
+   * @param {object} size
+   * @param {number} [size.width]
+   * @param {number} [size.height]
+   */
+  async resizeViewport({
+    width = this.page.viewport().width,
+    height = this.page.viewport().height
+  }) {
+    if (!this.page) {
+      this.page = await (await this.browser).newPage();
+    }
+    return this.page.setViewport({ width, height });
+  }
+
+  /**
    * @param {Puppeteer.StyleTagOptions} options
    */
   async overrideStyles(options) {

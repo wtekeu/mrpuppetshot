@@ -1,6 +1,6 @@
 {
   "name": "mrpuppetshot",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Mr. Puppetshot is a Puppeteer-based thin library for capturing page screenshots.",
   "author": "Luis Farzati <lfarzati@gmail.com>",
   "main": "src/MrPuppetShot.js",

@@ -46,7 +46,7 @@ class MrPuppetShot {
     return this.page.evaluate(
       selectors =>
         selectors.forEach(selector =>
-          document.querySelector(selector).remove()
+          document.querySelectorAll(selector).forEach(elem => elem.remove())
         ),
       selectors
     );
